@@ -4,13 +4,13 @@
 # # Calculate the delay of wireless communication at a wave propagation speed of 299792458 m / h
 days = int(input())
 speed = 38241
-newdistml = 16637000000 + speed*24*days
+newdistml = 16637000000 + (speed*24*days)
 newdistkm = newdistml*1.61
 newdistau = newdistkm/1.496e+8
 svspeed = 299792458*3.6
 sv = newdistkm/svspeed
-print(newdistml)
-print(newdistkm)
-print(newdistau)
-print(sv)
+print('Distance, miles:', newdistml)
+print('Distance, km:',newdistkm)
+print('Distance, au:',newdistau)
+print('Communication delay:',sv)
 
